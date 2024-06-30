@@ -32,6 +32,7 @@
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
       //do something later when date is reached
+      console.log(distance);
       if (distance < 0) {
         // helper functions
         const PI2 = Math.PI * 2
@@ -191,7 +192,7 @@
 
 
         })()
-        document.getElementById("headline").style.display="none";
+        // document.getElementById("headline").style.display="none";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("content").style.display = "grid";
         clearInterval(x);
