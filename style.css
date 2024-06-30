@@ -111,15 +111,14 @@ li span {
 }
 .text{
     color: white;
-    padding: 2rem;
-    height: 75dvh;
+    padding: 4rem 2rem;
+    /*height: 75dvh;*/
     max-width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     h2{
         margin-bottom: 1rem;
         font-size: 2rem;
@@ -129,16 +128,13 @@ li span {
         font-size: 1.5rem;
     }
 }
-@media all and (max-width: 768px) {
-    h1 {
-        font-size: calc(1.5rem * var(--smaller));
+@media screen and (max-width: 768px){
+    .grid{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .text{
+        max-width: 100%;
     }
 
-    li {
-        font-size: calc(1.125rem * var(--smaller));
-    }
-
-    li span {
-        font-size: calc(3.375rem * var(--smaller));
-    }
 }
