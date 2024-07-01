@@ -82,24 +82,18 @@ li span {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     grid-gap: 2rem;
-    /*max-width: 1200px;*/
-    figure {
-        margin: 0;
-        position: relative;
-        /*opacity: .5;*/
-        /*transition: opacity .5s;*/
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            aspect-ratio: 3 / 2;
-            object-position: top;
-        }
-        /*&:hover {*/
-        /*    opacity: 1;*/
-        /*}*/
-    }
+}
+.grid figure{
+    margin: 0;
+    position: relative;
+}
+.grid figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+    object-position: top;
 }
 #birthday{
     position: fixed;
@@ -119,14 +113,14 @@ li span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h2{
-        margin-bottom: 1rem;
-        font-size: 2rem;
+}
+.text h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
 
-    }
-    p{
-        font-size: 1.5rem;
-    }
+}
+.text p{
+    font-size: 1.5rem;
 }
 @media screen and (max-width: 768px){
     .grid{
